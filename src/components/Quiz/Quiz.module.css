@@ -1,0 +1,133 @@
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0px 16px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 2rem;
+  width: 70rem;
+  max-width: 95vw;
+}
+
+.container > .top {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container > .top > h1 {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.container > .top > .time {
+  background-color: #9135fa;
+  border: 1px solid #4d3053;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  gap: 1rem;
+}
+
+.container > .top > .time > .seconds {
+  background-color: #00fd32;
+  color: #000;
+  border-radius: 50%;
+  height: 2.5rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* middle */
+.container > .middle {
+  border: 1px solid #4141412a;
+  border-left: none;
+  border-right: none;
+  margin: 0 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container > .middle > h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container > .middle > button {
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background-color: #efeeef;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container > .middle > button.correct {
+  background-color: #36c95b;
+  color: #efefef;
+}
+.container > .middle > button.wrong {
+  background-color: #f8504f;
+  color: #efefef;
+}
+
+.container > .middle > button:hover {
+  opacity: 0.9;
+}
+
+.container > .bottom {
+  padding: 2rem 3rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container > .bottom > .left {
+  font-size: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.container > .bottom > .left > span.current,
+.container > .bottom > .left > span.total {
+  background-color: #5b4f6458;
+  display: block;
+  aspect-ratio: 1/1;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > .bottom > .right > button {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #f8504f;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+
+.container > .bottom > .right > button:hover {
+  opacity: 0.7;
+}
+
+.container > .bottom > .right > button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
